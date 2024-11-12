@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans Thai", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #33343f;
+}
+nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004274;
+    position: relative;
+    height: 70px;
+  }
+
+  .logo {
+    color: #fff;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-icon i {
+    color: #fff;
+    font-size: 30px;
+  }
+.chat {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.chat img {
+    width: 35px;
+    height: 35px;
+}
+
+.response {
+    background-color: #494b59;
+}
+
+.messagebar {
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #494b59;
+    background-color: #33343f;
+}
+
+.messagebar .bar-wrapper {
+    background-color: #494b59;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar-wrapper input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    color: #ccc;
+}
+
+.bar-wrapper input::placeholder {
+    color: #ccc;
+}
+
+.messagebar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.message-box {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #004274;
+      gap: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      padding: 20px;
+      padding-top: 0;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    #menuList {
+      transition: all 0.5s;
+    }
+  }
